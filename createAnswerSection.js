@@ -3,7 +3,9 @@ const createSteps = (quests) => {
     const steps = quests[quest].reduce((acc, step, i) => {
       return `${acc}
       <details class="step-details">
-        <summary class="step-summary">${i + 1}단계</summary>
+        <summary class="step-summary">${
+          quests[quest].length === 1 ? "정답" : `${i + 1}단계`
+        }</summary>
         <p class="step-content">${step}</p>
       </details>`;
     }, `<h3 class="quest-title">${quest}</h3>`);
