@@ -5,15 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="./icon.svg" />
+    <link rel="stylesheet" href="style.css" />
     <title>더블 액션: 신뢰의 도약 || 답안</title>
   </head>
-  <body style="word-break: keep-all">
-    <button type="button" id="show-seven-button">세븐의 답지</button>
-    <button type="button" id="show-nine-button">나인의 답지</button>
-    <section
-      style="display: grid; grid-template-columns: repeat(3, 1fr)"
-      id="answer-section"
-    ></section>
+  <body>
+    <main id="app">
+      <div class="button-container">
+        <button type="button" class="tab-button" id="show-seven-button">
+          세븐의 답지
+        </button>
+        <button type="button" class="tab-button" id="show-nine-button">
+          나인의 답지
+        </button>
+      </div>
+      <section id="answer-section"></section>
+    </main>
     <script src="./index.js" type="module"></script>
   </body>
 </html>
